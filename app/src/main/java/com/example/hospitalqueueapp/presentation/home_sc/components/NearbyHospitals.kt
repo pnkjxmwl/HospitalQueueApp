@@ -69,11 +69,12 @@ fun HospitalCard(
 ) {
     Card(
         colors = CardDefaults.cardColors(
-            containerColor = Color.White,
+            containerColor = Color.LightGray.copy(alpha = .4f),
         ),
+
         modifier = Modifier
             .fillMaxWidth()
-            .padding(8.dp)
+            .padding(16.dp)
             .clip(RoundedCornerShape(12.dp)),
     ) {
         Column(
